@@ -1,0 +1,9 @@
+<h1>Users</h1>
+
+<ul *ngIf="users">
+    <li *ngFor="let user of users">
+        <p> {{user.name}} </p>
+        <p>{{user.email}}</p>
+        <a href="{{ user.website}}">site</a>
+    </li>
+</ul>
